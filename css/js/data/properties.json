@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "address": "125 Oak Street",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75201",
+    "purchasePrice": 350000,
+    "marketValue": 425000,
+    "monthlyRent": 2850,
+    "bedrooms": 3,
+    "bathrooms": 2,
+    "occupancy": "Occupied",
+    "capRate": 6.8,
+    "cashFlow": 875
+  },
+  {
+    "id": 2,
+    "address": "88 Maple Avenue",
+    "city": "Austin",
+    "state": "TX",
+    "zip": "78701",
+    "purchasePrice": 510000,
+    "marketValue": 615000,
+    "monthlyRent": 3950,
+    "bedrooms": 4,
+    "bathrooms": 3,
+    "occupancy": "Vacant",
+    "capRate": 7.4,
+    "cashFlow": 1230
+  }
+]
