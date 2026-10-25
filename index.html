@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>REI Vision</title>
+<title>REI Vision | Real Estate Analytics</title>
 
 <link rel="stylesheet" href="css/style.css">
 
@@ -22,75 +22,147 @@
 <a href="#">Dashboard</a>
 <a href="#">Portfolio</a>
 <a href="#">Properties</a>
-<a href="#">Tenants</a>
-<a href="#">Leases</a>
-<a href="#">Financials</a>
-<a href="#">Market Analysis</a>
-<a href="#">ZIP Rankings</a>
+<a href="#">Markets</a>
+<a href="#">Analytics</a>
 
 </div>
 
 
 <div class="main">
 
-<h1>Real Estate Investment Intelligence Platform</h1>
+<h1>Real Estate Investment Intelligence</h1>
+
+<p>Investor Portfolio Dashboard</p>
 
 
 <div class="cards">
 
 
 <div class="card">
-Portfolio Value
+<h3>Portfolio Value</h3>
 <div class="number portfolio-value">Loading...</div>
 </div>
 
 
 <div class="card">
-Monthly Rent
+<h3>Monthly Rent</h3>
 <div class="number monthly-rent">Loading...</div>
 </div>
 
 
 <div class="card">
-Occupancy
-<div class="number occupancy">Loading...</div>
-</div>
-
-
-<div class="card">
-Average Cap Rate
-<div class="number cap-rate">Loading...</div>
-</div>
-
-
-<div class="card">
-Monthly Cash Flow
+<h3>Cash Flow</h3>
 <div class="number cash-flow">Loading...</div>
 </div>
 
 
 <div class="card">
-Active Properties
+<h3>Average Cap Rate</h3>
+<div class="number cap-rate">Loading...</div>
+</div>
+
+
+<div class="card">
+<h3>Properties</h3>
 <div class="number properties">Loading...</div>
 </div>
 
 
-<div class="card">
-Active Tenants
-<div class="number">742</div>
+</div>
+
+
+<div class="card chart-card">
+
+<h2>Property Market Value</h2>
+
+<canvas id="valueChart"></canvas>
+
 </div>
 
 
 <div class="card">
-Market Score
-<div class="number">A+</div>
+
+<h2>Investment Summary</h2>
+
+<table>
+
+<tr>
+<th>Market</th>
+<th>ZIP</th>
+<th>Value</th>
+<th>Rent</th>
+<th>Cap Rate</th>
+</tr>
+
+<tr>
+<td>Dallas</td>
+<td>75201</td>
+<td>$450,000</td>
+<td>$3,200</td>
+<td>6.8%</td>
+</tr>
+
+<tr>
+<td>Austin</td>
+<td>78701</td>
+<td>$600,000</td>
+<td>$4,200</td>
+<td>7.1%</td>
+</tr>
+
+<tr>
+<td>Houston</td>
+<td>77002</td>
+<td>$350,000</td>
+<td>$2,700</td>
+<td>7.5%</td>
+</tr>
+
+</table>
+
 </div>
 
 
 </div>
 
 
-</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+<script>
+
+new Chart(document.getElementById("valueChart"),{
+
+type:"bar",
+
+data:{
+
+labels:[
+"Dallas",
+"Austin",
+"Houston",
+"Phoenix"
+],
+
+datasets:[{
+
+label:"Property Value",
+
+data:[
+450000,
+600000,
+350000,
+500000
+
+]
+
+}]
+
+}
+
+});
+
+</script>
 
 
 <script src="js/dashboard.js"></script>
