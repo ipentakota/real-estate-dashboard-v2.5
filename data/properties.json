@@ -1,0 +1,34 @@
+[
+  {
+    "city":"Dallas",
+    "zip":"75201",
+    "value":450000,
+    "rent":3200,
+    "expenses":900,
+    "capRate":6.8
+  },
+  {
+    "city":"Austin",
+    "zip":"78701",
+    "value":600000,
+    "rent":4200,
+    "expenses":1200,
+    "capRate":7.1
+  },
+  {
+    "city":"Houston",
+    "zip":"77002",
+    "value":350000,
+    "rent":2700,
+    "expenses":800,
+    "capRate":7.5
+  },
+  {
+    "city":"Phoenix",
+    "zip":"85001",
+    "value":500000,
+    "rent":3600,
+    "expenses":1000,
+    "capRate":6.9
+  }
+]
